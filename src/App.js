@@ -36,15 +36,10 @@ class App extends Component {
   }
 
   render() {
-    const style = {
-      border: '4px solid green'
-    };
-
     return (
       <div className="App">
         <h1>Perro Loco</h1>
-        <UserInput 
-          style={style}
+        <UserInput
           changed={this.usernameChangeHandler} 
           username={this.state.username}/>
         <UserOutput 
